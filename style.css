@@ -5,7 +5,7 @@ html body{
 }
 
 nav{
-	/*position:fixed;*/
+	position:fixed;
 	width: 90%;
 	background-color:white;
 	display:flex;
@@ -131,6 +131,29 @@ h1{
 	padding-left:150px;
 }
 
+/* -------------Another section---------------- */
+
 .features2{
 	background-color: gray;
 }
+
+.features2 h1{
+		text-align:center;
+		width:100%;
+		padding-left:0;
+
+}
+
+.para2{
+	text-align:center;
+	width:100%;
+}
+
+
+
+
+
+
+
+
+

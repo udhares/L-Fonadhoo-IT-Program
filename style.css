@@ -111,3 +111,26 @@ p{
 	background:green;
 	color:red;
 }
+
+
+
+/* -------------courses section---------------- */
+
+
+h1{
+	padding-left: 600px;
+}
+
+.para{
+	padding-left:580px;
+}
+
+.course-options{
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	padding-left:150px;
+}
+
+.features2{
+	background-color: gray;
+}

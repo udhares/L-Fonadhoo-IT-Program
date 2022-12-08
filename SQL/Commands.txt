@@ -1,0 +1,103 @@
+To create a Database:
+  CREATE DATABASE databasename; 
+To delete a Database:
+  DROP DATABASE databasename; 
+  
+*********************************************
+
+To create a Table:
+  CREATE TABLE Persons (
+      PersonID int,
+      LastName varchar(255),
+      FirstName varchar(255),
+      Address varchar(255),
+      City varchar(255)
+  );
+  
+To delete a Table:
+  DROP TABLE table_name; 
+
+To delete all the data inside a Table:
+   TRUNCATE TABLE table_name;  ---- (to delete the data inside a table)
+
+To add a column to a Table:
+  ALTER TABLE Customers ADD Email varchar(255);
+
+To delete a column from a Table:
+  ALTER TABLE table_name DROP COLUMN column_name;
+
+To change data type of a Column:
+  ALTER TABLE table_name ALTER COLUMN column_name datatype;
+
+
+*******************************************************
+
+		        SQL Constraint
+
+To make sure that a field is not empty when creating a table, use (NOT NULL):
+  CREATE TABLE Persons (
+      ID int NOT NULL,
+      LastName varchar(255) NOT NULL,
+      FirstName varchar(255) NOT NULL,
+      Age int
+  );
+
+
+To make sure that an already created field is not empty, use (NOT NULL):
+  ALTER TABLE Persons MODIFY COLUMN Age int NOT NULL;  
+
+
+To make sure that a field is unique when creating a table, use (UNIQUE):
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+); 
+
+To mark a column as primry key when creating a table, use (PRIMARY KEY):
+  CREATE TABLE Persons (
+      ID int NOT NULL,
+      LastName varchar(255) NOT NULL,
+      FirstName varchar(255),
+      Age int,
+      PRIMARY KEY (ID)
+  );
+  
+To mark a column as primry key in an existing table:
+  ALTER TABLE Persons ADD PRIMARY KEY (ID);
+
+To mark a column as foreign key when creating a table, use (FOREIGN KEY):
+  CREATE TABLE Orders (
+      OrderID int NOT NULL,
+      OrderNumber int NOT NULL,
+      PersonID int,
+      PRIMARY KEY (OrderID),
+      FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+  ); 
+
+To mark a column as foreign key in an existing table:
+  ALTER TABLE Orders ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID); 
+
+To remove foreign key from a column in an existing table:
+  ALTER TABLE Orders DROP FOREIGN KEY PersonOrder; 
+
+
+To give a default value to a field:
+  CREATE TABLE Persons (
+      ID int NOT NULL,
+      LastName varchar(255) NOT NULL,
+      FirstName varchar(255),
+      Age int,
+      City varchar(255) DEFAULT 'Sandnes'
+  ); 
+  
+To make a column automatically increment while creating a table:
+   CREATE TABLE Persons (
+      Personid int NOT NULL AUTO_INCREMENT,
+      LastName varchar(255) NOT NULL,
+      FirstName varchar(255),
+      Age int,
+      PRIMARY KEY (Personid)
+  ); 

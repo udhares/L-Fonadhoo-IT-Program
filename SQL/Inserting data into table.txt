@@ -8,6 +8,13 @@ To Specify only the values to be inserted:
   INSERT INTO Customers VALUES ('Ahmed', '9999999', 'House', 'Fonadhoo', 'Maldives');
   
   
+To insert multiple lines:
+   INSERT INTO Customers (CustomerName, ContactNumber, Address, Island, Country)
+   VALUES ('Ahmed', 9999999, 'House', 'Fonadhoo', 'Maldives'),
+          ('Muhammed', 777777, 'Utheemu', 'Gan', 'Turkey'),
+          ('Ibrahim', '3333333', 'Boli', 'Omadhoo', 'Malaysia');
+  
+  
   *******************************************************************
   
                 The SQL UPDATE Statement

@@ -1,0 +1,30 @@
+                SQL INSERT INTO Statements
+
+To Specify both the column names and the values to be inserted:
+  INSERT INTO Customers (CustomerName, ContactNumber, Address, Island, Country) VALUES ('Ahmed', '9999999', 'House', 'Fonadhoo', 'Maldives');
+  INSERT INTO Customers (CustomerName, island, Country) VALUES ('Ahmed', 'Fonadhoo', 'Maldives');
+
+To Specify only the values to be inserted:
+  INSERT INTO Customers VALUES ('Ahmed', '9999999', 'House', 'Fonadhoo', 'Maldives');
+  
+  
+  *******************************************************************
+  
+                The SQL UPDATE Statement
+                
+ The UPDATE statement is used to modify the existing records in a table.
+ 
+ UPDATE Customers SET CustomerName = 'Muhammed', ContactNumber= '7777777' WHERE CustomerID = 1;
+ 
+ 
+ ***********************************************************************
+ 
+       Delete All Records
+
+To delete all the records:
+  DELETE FROM table_name;
+
+To delete a record:
+DELETE FROM Customers WHERE CustomerName='abc';
+
+

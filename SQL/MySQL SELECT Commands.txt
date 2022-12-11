@@ -1,0 +1,21 @@
+                       MySQL SELECT Statements
+
+To view everything in a table:
+  SELECT * FROM table_name; 
+
+
+SELECT CustomerName, City, Country FROM Customers;
+
+
+SELECT DISTINCT Country FROM Customers;
+
+
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+
+                MySQL WHERE Clause
+                
+
+
+SELECT * FROM Customers WHERE Country = 'Mexico';

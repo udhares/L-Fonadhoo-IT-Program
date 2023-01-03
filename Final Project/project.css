@@ -1,0 +1,184 @@
+/* ---------- Begin of Index Page Styling ------------------ */
+div{
+	border: px solid black;  /*----------- Apply borders to DIV to see the layout.-----------*/
+	
+}
+
+.outer{
+	display:grid;
+	grid-template-columns:repeat(6, 1fr);
+	width:900px;
+	margin:auto;
+}
+
+.outer div{
+	
+}
+
+.box1{
+	grid-column-start:1;
+	grid-column-end:7;
+	height:100px;
+}
+
+.box1 img{
+	display:block;
+	width:150px;
+	margin:auto;
+	margin-top:8px;
+}
+
+.nav_links{
+	grid-column-start:1;
+	grid-column-end:7;
+	display:grid;
+	grid-template-columns:repeat(6, 1fr);
+	height:70px;
+	justify-items:center;
+	align-items:center;
+}
+
+.nav_links a{
+		text-decoration:none;
+}
+
+.nav_links div{
+	border:0;
+}
+.box2{
+	grid-column-start:1;
+	grid-column-end:2;
+}
+
+.box3{
+	grid-column-start:2;
+	grid-column-end:3;
+}
+
+.box4{
+	grid-column-start:3;
+	grid-column-end:4;
+}
+
+.box5{
+	grid-column-start:4;
+	grid-column-end:5;
+}
+
+.box6{
+	grid-column-start:5;
+	grid-column-end:6;
+}
+
+.box7{
+	grid-column-start:6;
+	grid-column-end:7;
+}
+
+.box8{
+height:500px;
+text-align:center;
+display:grid;
+}
+
+.box8 a{
+	border:1px solid black;
+	margin: 20px;
+	background:skyblue;
+	text-decoration:none;
+	padding-top:20px;
+}
+
+.box9{
+	grid-column-start:2;
+	grid-column-end:7;
+}
+
+.box9 iframe{
+	width:100%;
+	height:100%
+}
+
+.box10{
+	grid-column-start:1;
+	grid-column-end:7;
+	height:100px;
+}
+
+.box11{
+	grid-column-start:1;
+	grid-column-end:7;
+	height:100px;
+}
+
+.footer{
+	grid-column-start:1;
+	grid-column-end:7;
+	
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	width:900px;
+	margin:auto;
+}
+
+.footer div{
+	
+
+}
+
+.footer_1{
+	padding-left:20px;
+}
+
+.footer_2{
+	padding-top:10%;
+	text-align:center;
+}
+
+.footer_3 img{
+	width:50px;
+	padding-left:30px;
+	padding-top:10%;
+}
+
+/* -------------------------------- End of Index Page Styling ------------------------------------------ */
+
+/* ---------- Begining of About Us Page Styling ------------------ */
+.aboutus{
+	width:900px;
+	margin:auto;
+}
+
+.about_pic{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	width:900px;
+	margin:auto;
+}
+
+.about_pic img{
+	width:100%;
+	height:100%;
+}
+
+/* -------------------------------- End of About Us Page Styling --------------------------------------- */
+
+/* ---------- Begining of Products Page Styling ------------------ */
+
+
+/* -------------------------------- End of Products Page Styling --------------------------------------- */
+
+/* ---------- Begining of Downloads Page Styling ----------------- */
+
+
+/* ------------------------------- End of Downloads Page Styling --------------------------------------- */
+
+/* ---------- Begining of Services Page Styling ------------------ */
+
+
+/* ------------------------------- End of Sevices Page Styling ----------------------------------------- */
+
+/* ---------- Begining of Contact Us Page Styling ----------------- */
+
+
+/* ------------------------------- End of Contact Us Page Styling -------------------------------------- */
